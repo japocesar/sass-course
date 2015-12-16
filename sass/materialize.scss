@@ -1,0 +1,58 @@
+@charset "UTF-8";
+@import "global";
+
+body{
+	font-family: $family-font;
+	background: $default-background;
+	color: $color-font;
+	margin: 0;
+}
+header{
+	margin: 0;
+	background: $base-color;
+	h1{
+		color: $lighter-color;
+		margin: 0 $measure5;	
+	}
+	h2{
+		color: $lighter-color;
+		margin: 0 $measure5 *2;
+	}
+}
+p{
+	margin: 20px $measure5;
+}
+footer{
+	background: $dark-color;
+}
+.grad{
+	@include border-radius;
+	margin: 20px;
+	background-color: $default-background;
+	background-image: -webkit-gradient(linear, left top, left bottom, from($lighter-color), to($default-background));
+	background-image: -webkit-linear-gradient(top, $lighter-color, $default-background);
+	background-image: -moz-linear-gradient(top, $lighter-color, $default-background);
+	background-image: -ms-linear-gradient(top, $lighter-color, $default-background);
+	background-image: -o-linear-gradient(top, $lighter-color, $default-background);
+
+	h2{
+		margin: 20px $measure5;
+		color: $dark-color;
+	}
+
+	.p1{
+		background: $base-color;
+		padding: 20px;
+		@include border-radius(100px);
+	}
+	.p2{
+		@extend .p1;
+		border: 1px solid red;
+	}
+}
+a{
+	color: $active-color;
+	&:hover{
+		color: $lighter-color;
+	}
+}
