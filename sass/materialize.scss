@@ -39,20 +39,29 @@ footer{
 		margin: 20px $measure5;
 		color: $dark-color;
 	}
-
 	.p1{
-		background: $base-color;
+		width: percentage(50px / 100px);
+		background: fade-out(#333,0.7);
+	}
+	.p1,.p2,.p3,.p4{
 		padding: 20px;
 		@include border-radius(100px);
-	}
-	.p2{
-		@extend .p1;
-		border: 1px solid red;
 	}
 }
 a{
 	color: $active-color;
 	&:hover{
 		color: $lighter-color;
+	}
+}
+ul.social-links li{
+	list-style: none;
+	a{
+		display: block;
+		float: left;
+		width: 65px;
+		height: 65px;
+		text-indent: -999px;
+		margin: 0 15px;
 	}
 }

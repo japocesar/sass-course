@@ -1,3 +1,27 @@
+.twitter {
+  background: url("/img/social/twitter.png") no-repeat; }
+
+.facebook {
+  background: url("/img/social/facebook.png") no-repeat; }
+
+.youtube {
+  background: url("/img/social/youtube.png") no-repeat; }
+
+.rss {
+  background: url("/img/social/rss.png") no-repeat; }
+
+.p1 {
+  background: #113C51; }
+
+.p2 {
+  background: #2f5a6f; }
+
+.p3 {
+  background: #4d788d; }
+
+.p4 {
+  background: #6b96ab; }
+
 body {
   font-family: arial, sans-serif;
   background: #000;
@@ -34,18 +58,28 @@ footer {
   .grad h2 {
     margin: 20px 5%;
     color: #113C51; }
-  .grad .p1, .grad .p2 {
-    background: #27556C;
+  .grad .p1 {
+    width: 50%;
+    background: rgba(51, 51, 51, 0.3); }
+  .grad .p1, .grad .p2, .grad .p3, .grad .p4 {
     padding: 20px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     border-radius: 100px; }
-  .grad .p2 {
-    border: 1px solid red; }
 
 a {
   color: #477186; }
   a:hover {
     color: #6E92A1; }
+
+ul.social-links li {
+  list-style: none; }
+  ul.social-links li a {
+    display: block;
+    float: left;
+    width: 65px;
+    height: 65px;
+    text-indent: -999px;
+    margin: 0 15px; }
 
 /*# sourceMappingURL=style.css.map */

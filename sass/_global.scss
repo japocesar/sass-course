@@ -14,3 +14,17 @@ $measure5: 5%;
 	-moz-border-radius: $radius;
 	border-radius: $radius;
 }
+$icons: (twitter,facebook,youtube,rss);
+@each $social in $icons{
+	.#{$social}{
+		background: url('/img/social/#{$social}.png') no-repeat;
+	}
+}
+@each $p in(
+	p1 $dark-color,
+	p2 $dark-color + 30,
+	p3 $dark-color + 60,
+	p4 $dark-color + 90
+){
+	.#{nth($p,1)}{ background: #{nth($p,2)}; }
+}
