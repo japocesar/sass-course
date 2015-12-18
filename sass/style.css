@@ -11,16 +11,20 @@
   background: url("/img/social/rss.png") no-repeat; }
 
 .p1 {
-  background: #113C51; }
+  background: black;
+  color: #b3b3b3; }
 
 .p2 {
-  background: #2f5a6f; }
+  background: #141414;
+  color: #c7c7c7; }
 
 .p3 {
-  background: #4d788d; }
+  background: white;
+  color: #4d4d4d; }
 
 .p4 {
-  background: #6b96ab; }
+  background: #d7d7d7;
+  color: #252525; }
 
 body {
   font-family: arial, sans-serif;
@@ -58,14 +62,16 @@ footer {
   .grad h2 {
     margin: 20px 5%;
     color: #113C51; }
-  .grad .p1 {
-    width: 50%;
-    background: rgba(51, 51, 51, 0.3); }
   .grad .p1, .grad .p2, .grad .p3, .grad .p4 {
     padding: 20px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     border-radius: 100px; }
+  .grad .p1 {
+    width: 50%;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px; }
 
 a {
   color: #477186; }
