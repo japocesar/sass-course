@@ -38,6 +38,9 @@ footer{
 	h2{
 		margin: 20px $measure5;
 		color: $dark-color;
+		@include phone{
+			text-align: center;
+		}
 	}
 	/*.p1,.p2,.p3,.p4{
 		padding: 20px;
@@ -47,6 +50,12 @@ footer{
 		/*width: percentage(50px / 100px);*/
 		@include border-radius(50px);
 	}
+}
+.grad %selected{
+	@include border-radius(20px);
+}
+.testing{
+	@extend %selected;
 }
 a{
 	color: $active-color;
