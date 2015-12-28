@@ -27,11 +27,25 @@ $icons: (twitter,facebook,youtube,rss);
 		@return darken($background, 70%);
 	}
 }
-@each $p in(
+/*@each $p in(
 	p1 black,
 	p2 black + 20,
 	p3 white,
 	p4 white - 40
 ){
 	.#{nth($p,1)}{ background: nth($p,2); color: myText-color(nth($p,2)); }
+}*/
+/*@for $i from 1 through 4{
+	.p#{$i}{ margin-right: 30px * $i; }
+}*/
+$i: 1;
+$parbg: black;
+@while $i < 5{
+	.p#{$i}{ margin-right: 50px * $i; 
+		background: $parbg; color: myText-color($parbg);
+		padding: 20px;
+		@include border-radius(100px);
+	}
+	$i: $i+1;
+	$parbg: lighten($parbg, 25%);
 }
